@@ -1,0 +1,78 @@
+.resCont {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Righteous', sans-serif;
+}
+
+.result {
+  width: 50%;
+  padding: 20px 30px;
+  font-size: 20px;
+}
+
+.image {
+  width: 60%;
+  margin: auto;
+}
+
+.resultCont {
+  font-size: 20px;
+  text-align: start;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.resultCont > div > p:nth-child(1) span {
+  color: #04ac04;
+  font-size: 30px;
+}
+.resultCont > div > p:nth-child(2) span {
+  color: red;
+  font-size: 30px;
+}
+
+.resultCont > div > p:nth-child(3) span {
+  color: #FA26A0;
+  font-size: 30px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .result {
+    width: 80%;
+  }
+
+  .image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .result {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .resultCont {
+    font-size: 14px;
+  }
+
+  .resultCont > div > p:nth-child(1) span {
+    font-size: 20px;
+  }
+  .resultCont > div > p:nth-child(2) span {
+    font-size: 20px;
+  }
+  .resultCont > div > p:nth-child(3) span {
+    font-size: 20px;
+  }
+}

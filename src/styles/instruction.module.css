@@ -1,0 +1,57 @@
+.container {
+  border: 1px solid white;
+  width: fit-content;
+  padding: 20px 20px 70px 20px;
+  border-radius: 15px;
+  position: relative;
+  backdrop-filter: blur(10px);
+}
+
+.container > p {
+  font-size: 25px;
+}
+
+.para {
+  text-align: start;
+  padding: 10px;
+  line-height: 40px;
+}
+
+.btn {
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+}
+
+.btn > button {
+  width: 30%;
+  background-color: #00a9ff;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.5s ease-in-out;
+
+  &:hover{
+    background-color: white;
+    color: black;
+  }
+}
+
+@media (max-width: 767px) {
+
+    .container > p{
+        font-size: 20px;
+    }
+
+    .para{
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .btn > button{
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,51 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.center{
+  width: 50%;
+}
+
+.logo{
+  width: 70%;
+  margin: auto;
+}
+
+.btn > button{
+  padding: 10px;
+  background-color: #00A9FF;
+  width: 30%;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  color: white;
+  border-radius: 5px;
+
+  &:hover{
+    background-color: #026da3;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .center{
+    width: 100%;
+  }
+
+  .logo{
+    width: 100%;
+  }
+
+  .btn > button{
+    font-size: 14px;
+  }
+}

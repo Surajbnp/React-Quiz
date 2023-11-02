@@ -1,0 +1,136 @@
+.quizContainer {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quizBox {
+  width: 60%;
+  border: 2px solid white;
+  box-sizing: border-box;
+  backdrop-filter: blur(80px);
+
+}
+
+.info {
+  border-bottom: 2px solid white;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 20px;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.quiz {
+  height: fit-content;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.options {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  color: black;
+}
+
+.ques {
+  border: 1px solid white;
+  height: 70px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 20px;
+}
+
+.options > div {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 20px;
+  outline: 1px solid white;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.saveBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.selected {
+  background-color: #00a9ff;
+  color: white;
+}
+
+.saveBtn > button {
+  outline: 1px solid white;
+  font-size: 16px;
+  padding: 10px;
+  transition: 0.5s;
+  background-color: transparent;
+  border-radius: 0px;
+  font-weight: 400;
+
+  &:hover {
+    background-color: #00a9ff;
+    color: white;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 18px;
+  }
+  .quizBox {
+    width: 80%;
+  }
+}
+
+@media (max-width: 767px) {
+  .quizContainer {
+    padding: 10px;
+  }
+
+  .info {
+    font-size: 14px;
+  }
+
+  .quizBox {
+    width: 100%;
+  }
+
+  .quiz {
+    font-size: 12px;
+  }
+
+  .ques {
+    height: 60px;
+    text-align: start;
+  }
+
+  .options > div {
+    height: 40px;
+    text-align: start;
+  }
+
+  .saveBtn > button {
+    font-size: 12px;
+  }
+}
