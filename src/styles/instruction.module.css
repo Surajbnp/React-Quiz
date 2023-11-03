@@ -4,7 +4,8 @@
   padding: 20px 20px 70px 20px;
   border-radius: 15px;
   position: relative;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(40px);
+  color : white;
 }
 
 .container > p {
@@ -15,6 +16,7 @@
   text-align: start;
   padding: 10px;
   line-height: 40px;
+  font-family: "Rubik", sans-serif
 }
 
 .btn {

@@ -4,13 +4,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Righteous', sans-serif;
+  font-family: "Righteous", sans-serif;
 }
 
 .result {
   width: 50%;
   padding: 20px 30px;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .image {
@@ -22,24 +22,26 @@
   font-size: 20px;
   text-align: start;
   font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
   margin-top: 20px;
+  font-family: "Rubik", sans-serif;
 }
 
-.resultCont > div > p:nth-child(1) span {
-  color: #04ac04;
-  font-size: 30px;
+.resultCont > p:nth-child(1) span {
+  color: #34f834;
 }
-.resultCont > div > p:nth-child(2) span {
-  color: red;
-  font-size: 30px;
+.resultCont > p:nth-child(2) span {
+  color: rgb(246, 73, 73);
 }
 
-.resultCont > div > p:nth-child(3) span {
-  color: #FA26A0;
-  font-size: 30px;
+.resultCont > p:nth-child(3) span {
+  color: #FFC5D0;
+}
+
+.resultCont > p:nth-child(4) span {
+  color: #fc67af;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -55,7 +57,7 @@
 @media (max-width: 767px) {
   .result {
     width: 100%;
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .image {

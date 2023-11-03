@@ -1,4 +1,4 @@
-import { useLocation, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import styles from "../styles/result.module.css";
 import React from "react";
 import { Button } from "@chakra-ui/react";
@@ -17,7 +17,6 @@ const ResultPage = ({ correct, wrong, tQ, skipped }) => {
         </div>
         <p>Thanks for participating the quiz. Here is your result.</p>
         <div className={styles.resultCont}>
-          <div>
             <p>
               {"Correct Answers : "} <span>{correct}</span>
             </p>
@@ -25,17 +24,14 @@ const ResultPage = ({ correct, wrong, tQ, skipped }) => {
               {`Wrong Answers :`} <span>{wrong}</span>
             </p>
             <p>
-              {`Skipped :`} <span>{skipped}</span>
+              {`Not Attempted :`} <span>{skipped}</span>
             </p>
-          </div>
-          <div>
             <p>
               {`Total Score :`}{" "}
               <span>
                 {correct * 5}/{tQ * 5}
               </span>
             </p>
-          </div>
         </div>
         <div>
           <Button

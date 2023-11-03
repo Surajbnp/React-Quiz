@@ -75,6 +75,7 @@ const Quiz = () => {
         } else {
           clearInterval(timerInterval);
           setDisabled(true);
+          setSkip(skipCount + 1);
           if (currentQuestionIndex < questions.length - 1) {
             toast.info(`Time's Up 🙂, Next Question in 5 sec !`, {
               position: "top-center",
@@ -86,7 +87,7 @@ const Quiz = () => {
               progress: undefined,
               theme: "colored",
               style: {
-                fontSize: "14px",
+                fontSize: "12px",
               },
             });
           }
