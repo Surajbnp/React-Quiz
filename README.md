@@ -2,21 +2,38 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# About Project
+This is a quiz app containing 10 questions, each question containing 5 marks each with no negative marking. User can go and attempted the quiz, also can see their result.
+
+# Features
+- Responsive UI (Large Screen, Tablets and Mobile)
+- Timer for each question (20 sec)
+- Functionality to skip current question
+- Multiple choice questions
+- Dynamic result page
+- Shuffle question every time.
+- Proper instruction befor starting the quiz.
+
 ## Deployed Link 
-https://transportsimple.netlify.app
+- http://quiztime-react.netlify.app/
+
+## Run on local 
+- npm start
 
 # Pages :
 
 ## Homepage 
-![home](https://res.cloudinary.com/dddnxiqpq/image/upload/v1685466505/h1_n44oxf.png)
+![home](https://imgur.com/fYQ6nBh.png)
 
-## Feature 
-![home](https://res.cloudinary.com/dddnxiqpq/image/upload/v1685466509/h2_u7pt4e.png)
+## Intruction Page 
+![Instruction Page](https://imgur.com/gEJO122.png)
 
-## Industry 
-![home](https://res.cloudinary.com/dddnxiqpq/image/upload/v1685466514/h3_w0kwzu.png)
+## Quiz Page 
+![Quiz Page](https://imgur.com/Us9i2Vr.png)
 
-## About 
-![home](https://res.cloudinary.com/dddnxiqpq/image/upload/v1685466523/h4_woghod.png)
+## Result Page
+![Result Page](https://imgur.com/sezuoXe.png)
+
+
 
 
